@@ -55,3 +55,15 @@
 
 - 背景音乐是 MP3 循环，个别情况下循环接缝会有极短停顿，转成 OGG 可根治
 - 玩家三张立绘已统一到 1600×1600 画布，直接替换 `art/player_*.png` 即可保持动作切换时大小一致
+
+## 授权 / License
+
+| 内容 | 授权 |
+|---|---|
+| 代码（`*.gd`）、场景（`*.tscn`）、项目配置 | **MIT**，见 [`LICENSE`](LICENSE) |
+| 字体 Xolonium | SIL Open Font License 1.1，见 [`fonts/LICENSE.txt`](fonts/LICENSE.txt) |
+| 玩家/小怪立绘（`art/player_*.png`、`art/yujie*.png`、`art/zp_*.png`） | 自制 / 生成素材，随本仓库以 MIT 发布 |
+| 音频（`art/bgm_dongbei.mp3`、`art/sfx_eat.mp3`、`art/gameover.wav`） | ⚠️ **不在 MIT 授权范围内**，版权归各自权利方所有，仅用于学习演示，请勿商用或再分发 |
+
+如果你要基于本项目做自己的游戏，请自行替换上述音频为你有权使用的素材。
+
