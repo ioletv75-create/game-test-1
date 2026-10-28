@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://do3o1lxw1erx8"]
+
+[ext_resource type="Script" uid="uid://dgchyn165efec" path="res://main.gd" id="1_h2yge"]
+[ext_resource type="PackedScene" uid="uid://bygrn4sambd57" path="res://player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://ddmavf6731j40" path="res://mob.tscn" id="2_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://b5u4oy73t61ae" path="res://hud.tscn" id="3_hud"]
+[ext_resource type="AudioStream" uid="uid://dbfy1mo662ta6" path="res://art/sfx_eat.mp3" id="4_eat"]
+[ext_resource type="AudioStream" uid="uid://dp8qam52l4ddq" path="res://art/bgm_dongbei.mp3" id="5_bgm"]
+[ext_resource type="AudioStream" uid="uid://6acryne25cq4" path="res://art/gameover.wav" id="6_over"]
+
+[sub_resource type="Curve2D" id="Curve2D_ig7tw"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1920, 0, 0, 0, 0, 0, 1920, 1080, 0, 0, 0, 0, 0, 1080, 0, 0, 0, 0, 0, 0)
+}
+point_count = 5
+
+[node name="Main" type="Node" unique_id=367549193]
+script = ExtResource("1_h2yge")
+mob_scene = ExtResource("2_1bvp3")
+
+[node name="Player" parent="." unique_id=1000562334 instance=ExtResource("1_ig7tw")]
+
+[node name="MobTimer" type="Timer" parent="." unique_id=859581064]
+wait_time = 0.436
+
+[node name="StartTimer" type="Timer" parent="." unique_id=1724722803]
+wait_time = 2.436
+one_shot = true
+
+[node name="StartPosition" type="Marker2D" parent="." unique_id=1782415827]
+position = Vector2(240, 450)
+
+[node name="MobPath" type="Path2D" parent="." unique_id=868636246]
+curve = SubResource("Curve2D_ig7tw")
+
+[node name="MobSpawnLocation" type="PathFollow2D" parent="MobPath" unique_id=2024080424]
+
+[node name="HUD" parent="." unique_id=1246530407 instance=ExtResource("3_hud")]
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_bgm")
+volume_db = -10.0
+autoplay = true
+
+[node name="EatSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_eat")
+volume_db = -4.0
+
+[node name="GameOverSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_over")
+volume_db = -4.0
+
+[connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]
+[connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]

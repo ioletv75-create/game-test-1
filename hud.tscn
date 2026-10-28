@@ -1,0 +1,146 @@
+[gd_scene format=3 uid="uid://b5u4oy73t61ae"]
+
+[ext_resource type="Script" uid="uid://bv6tu0245qx7r" path="res://hud.gd" id="1_64ctp"]
+[ext_resource type="FontFile" uid="uid://eiv4um7dooxy" path="res://fonts/Xolonium-Regular.ttf" id="2_8sq4i"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_panel"]
+bg_color = Color(0.043, 0.07, 0.11, 0.92)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.35, 0.78, 0.98, 0.9)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+content_margin_left = 56.0
+content_margin_top = 36.0
+content_margin_right = 56.0
+content_margin_bottom = 36.0
+
+[node name="HUD" type="CanvasLayer" unique_id=50540778]
+script = ExtResource("1_64ctp")
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=1080046548]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -22.5
+offset_right = 22.5
+offset_bottom = 78.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_8sq4i")
+theme_override_font_sizes/font_size = 64
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SizeLabel" type="Label" parent="."]
+offset_left = 24.0
+offset_top = 12.0
+offset_right = 340.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(0.72, 0.94, 1, 1)
+theme_override_fonts/font = ExtResource("2_8sq4i")
+theme_override_font_sizes/font_size = 40
+text = "体型 1.00"
+vertical_alignment = 1
+
+[node name="BestLabel" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -360.0
+offset_top = 12.0
+offset_right = -24.0
+offset_bottom = 64.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0.72, 0.94, 1, 1)
+theme_override_fonts/font = ExtResource("2_8sq4i")
+theme_override_font_sizes/font_size = 40
+text = "最高 0"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Message" type="Label" parent="." unique_id=294447100]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -480.0
+offset_top = 60.0
+offset_right = 480.0
+offset_bottom = 180.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_8sq4i")
+theme_override_font_sizes/font_size = 46
+text = "大鱼吃小鱼"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="GameOverPanel" type="PanelContainer" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -250.0
+offset_right = 320.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="VBox" type="VBoxContainer" parent="GameOverPanel"]
+layout_mode = 2
+theme_override_constants/separation = 22
+alignment = 1
+
+[node name="TitleLabel" type="Label" parent="GameOverPanel/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.9, 1, 1)
+theme_override_fonts/font = ExtResource("2_8sq4i")
+theme_override_font_sizes/font_size = 60
+text = "游戏结束"
+horizontal_alignment = 1
+
+[node name="ResultLabel" type="Label" parent="GameOverPanel/VBox"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_8sq4i")
+theme_override_font_sizes/font_size = 48
+text = "得分 0"
+horizontal_alignment = 1
+
+[node name="BestResultLabel" type="Label" parent="GameOverPanel/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72, 0.94, 1, 1)
+theme_override_fonts/font = ExtResource("2_8sq4i")
+theme_override_font_sizes/font_size = 34
+text = "最高 0"
+horizontal_alignment = 1
+
+[node name="NewRecordLabel" type="Label" parent="GameOverPanel/VBox"]
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.85, 0.35, 1)
+theme_override_fonts/font = ExtResource("2_8sq4i")
+theme_override_font_sizes/font_size = 34
+text = "新纪录！"
+horizontal_alignment = 1
+
+[node name="RestartButton" type="Button" parent="GameOverPanel/VBox"]
+custom_minimum_size = Vector2(0, 76)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_8sq4i")
+theme_override_font_sizes/font_size = 44
+text = "再来一局"
+
+[node name="MessageTimer" type="Timer" parent="." unique_id=2025487708]
+wait_time = 2.229
+one_shot = true

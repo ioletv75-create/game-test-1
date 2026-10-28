@@ -1,0 +1,15 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# 导出产物（build/FishGame.exe 172MB、压缩包 105MB，均超过 GitHub 100MB 单文件上限）
+build/
+
+# 临时/验证目录
+_verify/
+*.tmp
+
+# 系统垃圾文件
+.DS_Store
+Thumbs.db
+desktop.ini
