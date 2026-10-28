@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://mibmwb8i5e80"
-path="res://.godot/imported/zp_stand.png-76793219b1f9928d37631df9a62390c1.ctex"
+uid="uid://dnuy830k1bpap"
+path="res://.godot/imported/yujie2.png-4db1199357dccc5d6bf5fc16cc6f6f9c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/zp_stand.png"
-dest_files=["res://.godot/imported/zp_stand.png-76793219b1f9928d37631df9a62390c1.ctex"]
+source_file="res://assets/source/yujie2.png"
+dest_files=["res://.godot/imported/yujie2.png-4db1199357dccc5d6bf5fc16cc6f6f9c.ctex"]
 
 [params]
 

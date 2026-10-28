@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://do3o1lxw1erx8"]
 
-[ext_resource type="Script" uid="uid://dgchyn165efec" path="res://main.gd" id="1_h2yge"]
-[ext_resource type="PackedScene" uid="uid://bygrn4sambd57" path="res://player.tscn" id="1_ig7tw"]
-[ext_resource type="PackedScene" uid="uid://ddmavf6731j40" path="res://mob.tscn" id="2_1bvp3"]
-[ext_resource type="PackedScene" uid="uid://b5u4oy73t61ae" path="res://hud.tscn" id="3_hud"]
-[ext_resource type="AudioStream" uid="uid://dbfy1mo662ta6" path="res://art/sfx_eat.mp3" id="4_eat"]
-[ext_resource type="AudioStream" uid="uid://dp8qam52l4ddq" path="res://art/bgm_dongbei.mp3" id="5_bgm"]
-[ext_resource type="AudioStream" uid="uid://6acryne25cq4" path="res://art/gameover.wav" id="6_over"]
+[ext_resource type="Script" uid="uid://dgchyn165efec" path="res://scripts/main.gd" id="1_h2yge"]
+[ext_resource type="PackedScene" uid="uid://bygrn4sambd57" path="res://scenes/player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://ddmavf6731j40" path="res://scenes/mob.tscn" id="2_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://b5u4oy73t61ae" path="res://scenes/hud.tscn" id="3_hud"]
+[ext_resource type="AudioStream" uid="uid://dbfy1mo662ta6" path="res://assets/audio/sfx_eat.mp3" id="4_eat"]
+[ext_resource type="AudioStream" uid="uid://dp8qam52l4ddq" path="res://assets/audio/bgm_dongbei.mp3" id="5_bgm"]
+[ext_resource type="AudioStream" uid="uid://6acryne25cq4" path="res://assets/audio/gameover.wav" id="6_over"]
 
 [sub_resource type="Curve2D" id="Curve2D_ig7tw"]
 _data = {

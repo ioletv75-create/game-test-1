@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b5u4oy73t61ae"]
 
-[ext_resource type="Script" uid="uid://bv6tu0245qx7r" path="res://hud.gd" id="1_64ctp"]
-[ext_resource type="FontFile" uid="uid://eiv4um7dooxy" path="res://fonts/Xolonium-Regular.ttf" id="2_8sq4i"]
+[ext_resource type="Script" uid="uid://bv6tu0245qx7r" path="res://scripts/hud.gd" id="1_64ctp"]
+[ext_resource type="FontFile" uid="uid://eiv4um7dooxy" path="res://assets/fonts/Xolonium-Regular.ttf" id="2_8sq4i"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_panel"]
 bg_color = Color(0.043, 0.07, 0.11, 0.92)

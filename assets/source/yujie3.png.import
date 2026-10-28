@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fxp81ajkt6v5"
-path="res://.godot/imported/player_eat_1.png-5c9de23082af5ef1af8e20c03ebe7a88.ctex"
+uid="uid://cp56iulhkwmdv"
+path="res://.godot/imported/yujie3.png-eea2b2e83cf36ac613284187da54f2b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/player_eat_1.png"
-dest_files=["res://.godot/imported/player_eat_1.png-5c9de23082af5ef1af8e20c03ebe7a88.ctex"]
+source_file="res://assets/source/yujie3.png"
+dest_files=["res://.godot/imported/yujie3.png-eea2b2e83cf36ac613284187da54f2b3.ctex"]
 
 [params]
 

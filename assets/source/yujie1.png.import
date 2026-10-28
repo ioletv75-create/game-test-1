@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cp56iulhkwmdv"
-path="res://.godot/imported/yujie3.png-d8ab9288cc5dd906b2386ab39c0e5453.ctex"
+uid="uid://0j4end7ctnl1"
+path="res://.godot/imported/yujie1.png-f75534250032ce5c139ec055ad68b158.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/yujie3.png"
-dest_files=["res://.godot/imported/yujie3.png-d8ab9288cc5dd906b2386ab39c0e5453.ctex"]
+source_file="res://assets/source/yujie1.png"
+dest_files=["res://.godot/imported/yujie1.png-f75534250032ce5c139ec055ad68b158.ctex"]
 
 [params]
 
